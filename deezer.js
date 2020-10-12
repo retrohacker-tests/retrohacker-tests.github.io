@@ -1,4 +1,3 @@
-/*
 const title = document.getElementById('title')
 const deezer = document.getElementById('listen')
 const player = document.getElementById('player')
@@ -17,6 +16,7 @@ function showPlayer (text, link) {
   title.href = link
 }
 
+/*
 function infinity() {
   DZ.Event.subscribe('track_end', function() {
     const last = DZ.player.getTrackList().length - 1
@@ -28,6 +28,7 @@ function infinity() {
     }
   })
 }
+*/
 
 function playMusic () {
   // infinity()
@@ -47,7 +48,6 @@ function playMusic () {
   req.open('GET', './discover')
   req.send()
 }
-*/
 
 function login () {
   console.log('Logging in...')
@@ -56,7 +56,7 @@ function login () {
       console.log('Login failed')
     } else {
       console.log('Logged in')
-      //return playMusic()
+      return playMusic()
     }
   }, {
     perms: 'basic_access'
@@ -82,7 +82,7 @@ window.dzAsyncInit = function () {
     return getLoginStatus()
   })
   DZ.init({
-    appId: '438782',
+    appId: '439382',
     channelUrl: 'https://audile.app/channel.html',
     player: {
       container: 'player',
