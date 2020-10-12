@@ -71,6 +71,7 @@ function getLoginStatus () {
     if (response.status !== 'connected') {
       return login()
     } else {
+      return playMusic()
     }
   })
 }
