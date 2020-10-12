@@ -1,8 +1,60 @@
 <html>
-  <body>
-    <div id="view">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Audile: Discover Music</title>
+  </head>
+  <body style="background-color: #00587a; color: white; text-align: center;">
+    <h1>Audile</h1>
+    <h2>Discover Music</h2>
+    <div id="view" style="max-width: 600px; margin: auto; padding: 10px;">
       <div id="dz-root"></div>
-      <div id="player"></div>
+      <div id="player" style="margin: auto; width: 300px; display: none;"></div>
+      <a id="title" style="display: block; font-size: 1.3em; text-decoration: none; font-weight: bold; padding: 2em 0; color: white;">Loading...</a>
+    </div>
+    <div class="about" style="max-width: 600px; margin: auto; text-align: left; padding: 10px">
+      <h2 style="text-align: center;">Why Audile?</h2>
+      <style>
+        .about a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      </style>
+      <p>
+        When I wanted different, every music service gave me more of the same.
+        I wanted an app that taught me something new about music every time I
+        listened. I wanted
+        <a href="https://www.deezer.com/en/track/65261424" style="color: white; weight: bold;">hi-fi acid trips</a>,
+        <a href="https://www.deezer.com/en/album/7306675">1960s bluegrass</a>, and
+        <a href="https://www.deezer.com/en/album/191270">Wahala Project</a>.
+        Instead of listening to a single song, I wanted to experience the space
+        an artist was working in. I wanted a recommendation algorithm that gave
+        me entire albums.
+      </p>
+
+      <p>
+        So I built Audile.
+      </p>
+
+      <p>
+        Audile's algorithm is different, our recommendation engine doesn't
+        favor popularity. That means you won't be listening to music just
+        because everyone else listens to it. On Audile, you are just as likely
+        to discover
+        <a href="https://www.deezer.com/en/artist/1141735">Joe Cahill</a>
+        as you are
+        <a href="https://www.deezer.com/en/artist/1141735">AC/DC</a>,
+        and I think that is a good thing. I can't promise everything you listen
+        to here will be good. But I can promise you this: you will listen to
+        music unlike anything you have heard before.
+      </p>
+    </div>
+    <div class="deezer">
+      <div>Powered By</div>
+      <img src="./deezer.png" style="height: 1.5em; padding: 1em;"/>
     </div>
     <script src="./deezer.js"></script>
   </body>
