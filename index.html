@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script>
+    <script>
+      DZ.ready(function () {
+        console.log('sdk ready')
+        DZ.login(function(response) {
+          console.log(response)
+        })
+      })
+      DZ.init({
+        appId: '439362',
+        channelUrl: 'https://test.audile.app/channel.html'
+      })
+    </script>
+  </body>
+</html>
