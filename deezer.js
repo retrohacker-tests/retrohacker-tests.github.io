@@ -1,5 +1,4 @@
 const title = document.getElementById('title')
-const deezer = document.getElementById('listen')
 const player = document.getElementById('player')
 
 function hidePlayer (text, link) {
@@ -38,7 +37,6 @@ function playMusic () {
     const selected = JSON.parse(req.response)
     title.innerText = selected.title
     title.href = selected.link
-    deezer.href = selected.link
     console.log('Picked album')
     console.log(selected)
     DZ.player.playAlbum(selected.id, false, function () {
