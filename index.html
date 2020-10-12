@@ -1,7 +1,8 @@
 <html>
   <body>
-    <div id="view" style="max-width: 600px; margin: auto; padding: 10px;">
+    <div id="view">
       <div id="dz-root"></div>
+      <div id="player"></div>
     </div>
     <script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script>
     <script>
@@ -13,7 +14,13 @@
       })
       DZ.init({
         appId: '439362',
-        channelUrl: 'https://test.audile.app/channel.html'
+        channelUrl: 'https://test.audile.app/channel.html',
+        player : {
+          container : "player",
+          width: 300,
+          height: 300,
+          format: "square",
+        }
       })
     </script>
   </body>
