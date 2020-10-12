@@ -4,24 +4,6 @@
       <div id="dz-root"></div>
       <div id="player"></div>
     </div>
-    <script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script>
-    <script>
-      DZ.ready(function () {
-        console.log('sdk ready')
-        DZ.login(function(response) {
-          console.log(response)
-        })
-      })
-      DZ.init({
-        appId: '439362',
-        channelUrl: 'https://test.audile.app/channel.html',
-        player : {
-          container : "player",
-          width: 300,
-          height: 300,
-          format: "square",
-        }
-      })
-    </script>
+    <script src="./deezer.js"></script>
   </body>
 </html>
